@@ -1,5 +1,6 @@
 import random 
 
+## The user is guessing computers number.
 
 def guess(x):
     random_number = random.randint(1, x)
@@ -12,6 +13,8 @@ def guess(x):
             print("Your number is too small!")
         
     print(f"Congratulations, you've guessed the number {random_number}! :)")
+    
+## The computer is guessing users number.
     
 def computer_guess(x):
     low = 1
