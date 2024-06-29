@@ -2,10 +2,9 @@
 # User has to guess the word. The user has the same amount of 'lives' as the amount of letters in the word.
 
 import random
-from words import words
+from word_list import words
 
 def main():
-    
     random_word = random.choice(words)          # Pick a random word. 
     word_list = list(random_word)               # Change the word to a list.
     letters = len(word_list)                    # Count the number of items in the list.
