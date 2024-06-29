@@ -42,12 +42,12 @@ class TicTacToe():
         if all([spot == letter for spot in column]):
             return True
         if square % 2 == 0:
-            diagonal1 = [self.board[i] for i in [0, 4, 8]] # left to right diagonal
+            diagonal1 = [self.board[i] for i in [0, 4, 8]] 
             #print('diag1', diagonal1)
             if all([spot == letter for spot in diagonal1]):
                 return True
             #print('diag2', diagonal2)
-            diagonal2 = [self.board[i] for i in [2, 4, 6]] # left to right diagonal
+            diagonal2 = [self.board[i] for i in [2, 4, 6]] 
             if all([spot == letter for spot in diagonal2]):
                 return True
         return False
@@ -87,9 +87,9 @@ def play(game, x_player, o_player, print_game=True):
                 if print_game:
                     print(letter + ' wins!')
                 return letter
-            letter = 'O' if letter == 'X' else 'X'
+            letter = 'O' if letter == 'X' else 'X'  
             
-    time.sleep(.8)
+        time.sleep(.8)
                     
     if print_game:
         print('It\'s a tie!')
