@@ -2,7 +2,7 @@
 # User has to guess the word. The user has the same amount of 'lives' as the amount of letters in the word.
 
 import random
-from word_list import words
+from Hangman.word_list import words
 
 def main():
     random_word = random.choice(words)          # Pick a random word. 
